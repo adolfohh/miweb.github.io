@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoGuías - Tutoriales de Tecnología, Optimización y Programación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado -->
+    <video autoplay muted loop id="video-fondo">
+        <source src="fondo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo de TecnoGuías" class="logo-img">
+            <h1>TecnoGuías</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tutoriales">Tutoriales</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenido a TecnoGuías</h2>
+                <p>Aprende sobre tecnología, optimización y programación con nuestros tutoriales paso a paso.</p>
+                <a href="#tutoriales" class="btn">Explorar Tutoriales</a>
+            </div>
+        </section>
+
+        <!-- Sección: Portada del Video -->
+        <section id="portada-video">
+            <div class="portada-container">
+                <div class="portada-img-container">
+                    <img src="portada-video.jpg" alt="Portada del primer video" class="portada-img">
+                    <div class="play-icon">▶️</div> <!-- Ícono de reproducción -->
+                </div>
+                <div class="descripcion">
+                    <h2>Mi Primer Video: Introducción a SolidWorks</h2>
+                    <p>En este video, te enseño los conceptos básicos de SolidWorks, desde croquis 2D hasta modelado 3D. ¡No te lo pierdas!</p>
+                    <a href="https://files.transtutors.com/book/qimg/1363ec07-0620-4f5f-bfaa-d1b1a73b29d8.png" download class="btn">Descargar Imagen del Video</a>
+                    <p class="nota">(Si no se descarga automáticamente, haz clic derecho y selecciona "Guardar imagen como...")</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Tutoriales -->
+        <section id="tutoriales">
+            <h2>Tutoriales Recientes</h2>
+            <div class="tutoriales-grid">
+                <div class="tutorial destacado">
+                    <h3>Introducción a SolidWorks</h3>
+                    <p>Aprende los conceptos básicos de SolidWorks desde cero.</p>
+                    <a href="https://www.youtube.com/watch?v=pcdnof5jKiY&list=PLCNCdSd3uC1nABiPpQzsJ_K_Emd9XAD52&pp=gAQB" target="_blank" class="btn">Ver Video</a>
+                </div>
+                <div class="tutorial">
+                    <h3>Optimización de PC</h3>
+                    <p>Consejos para mejorar el rendimiento de tu computadora.</p>
+                </div>
+                <div class="tutorial">
+                    <h3>Programación en JavaScript</h3>
+                    <p>Domina los fundamentos de JavaScript para desarrollo web.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Sobre Mí -->
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <div class="sobre-mi-content">
+                <img src="adolfo.jpg" alt="Adolfo" class="sobre-mi-img">
+                <div class="sobre-mi-texto">
+                    <p>¡Hola! Soy <strong>Adolfo</strong>, ingeniero en Tecnología de Manufactura con más de 2 años de experiencia en diseño industrial y desarrollo de productos. Mi pasión es enseñar y compartir conocimientos sobre tecnología, optimización y programación.</p>
+                    <p>En TecnoGuías, encontrarás tutoriales prácticos y fáciles de seguir para que puedas dominar herramientas como SolidWorks, optimizar tus dispositivos y aprender a programar desde cero.</p>
+                    <p>¡Únete a esta comunidad y comienza a crear proyectos increíbles!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-container">
+                <form action="https://formspree.io/f/xvgzlkdw" method="POST" class="contacto-form">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+                <div class="contacto-info">
+                    <p>¿Tienes alguna pregunta o sugerencia? ¡No dudes en contactarme!</p>
+                    <p>Correo: <a href="mailto:jbbfudshfjkdfn@gmail.com">jbbfudshfjkdfn@gmail.com</a></p>
+                    <div class="redes-sociales">
+                        <a href="[Enlace a YouTube]" target="_blank">YouTube</a>
+                        <a href="[Enlace a Instagram]" target="_blank">Instagram</a>
+                        <a href="[Enlace a Twitter]" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TecnoGuías. Todos los derechos reservados.</p>
+    </footer>
+
+ <!-- Reproductor de música flotante -->
+<div id="reproductor">
+    <div id="nave-alienigena">
+        <img src="nave.png" alt="Nave alienígena">
+    </div>
+    <div id="controles">
+        <button id="anterior">⏮️</button>
+        <button id="play-pause">▶️</button>
+        <button id="siguiente">⏭️</button>
+    </div>
+    <audio id="audio">
+        <source src="musica.mp3" type="audio/mpeg">
+        <source src="musica2.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
