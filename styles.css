@@ -115,12 +115,57 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Sección: Videos */
+#videos {
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.video-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.video-slide.active {
+    display: block;
+}
+
+.video-slide:not(.active) {
+    display: none;
+}
+
+.video-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-controls button {
+    background: #4b0082;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 10px;
+}
+
+.video-controls button:hover {
+    background: #1e3c72;
+}
+
 /* Sección: Portada del Video */
 .portada-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 20px;
 }
 
 .portada-img-container {
@@ -277,7 +322,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.3); /* Fondo más transparente */
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -306,7 +351,7 @@ footer {
 }
 
 #controles button {
-    background: rgba(75, 0, 130, 0.7); /* Fondo semitransparente para los botones */
+    background: rgba(75, 0, 130, 0.7);
     color: #fff;
     border: none;
     padding: 15px;
@@ -317,7 +362,7 @@ footer {
 }
 
 #controles button:hover {
-    background: rgba(30, 60, 114, 0.7); /* Fondo semitransparente al hacer hover */
+    background: rgba(30, 60, 114, 0.7);
     transform: scale(1.1);
 }
 
@@ -325,32 +370,32 @@ footer {
 @media (max-width: 768px) {
     /* Header */
     header .logo h1 {
-        font-size: 2rem; /* Tamaño más pequeño en móviles */
+        font-size: 2rem;
     }
 
     /* Hero */
     .hero-content h2 {
-        font-size: 2rem; /* Tamaño más pequeño en móviles */
+        font-size: 2rem;
     }
 
     .hero-content p {
-        font-size: 1rem; /* Tamaño más pequeño en móviles */
+        font-size: 1rem;
     }
 
     /* Tutoriales */
     .tutoriales-grid {
-        flex-direction: column; /* Apila los tutoriales en móviles */
+        flex-direction: column;
         align-items: center;
     }
 
     .tutorial {
-        width: 80%; /* Ocupa más ancho en móviles */
+        width: 80%;
         margin-bottom: 20px;
     }
 
     /* Sobre Mí */
     .sobre-mi-content {
-        flex-direction: column; /* Apila la imagen y el texto en móviles */
+        flex-direction: column;
         text-align: center;
     }
 
@@ -361,13 +406,13 @@ footer {
 
     /* Contacto */
     .contacto-container {
-        flex-direction: column; /* Apila el formulario y la info en móviles */
+        flex-direction: column;
         align-items: center;
     }
 
     .contacto-form,
     .contacto-info {
-        width: 100%; /* Ocupa todo el ancho en móviles */
+        width: 100%;
     }
 
     /* Reproductor de música */
@@ -378,11 +423,11 @@ footer {
     }
 
     #nave-alienigena img {
-        width: 80px; /* Más pequeño en móviles */
+        width: 80px;
     }
 
     #controles button {
         padding: 10px;
-        font-size: 1rem; /* Tamaño más pequeño en móviles */
+        font-size: 1rem;
     }
 }

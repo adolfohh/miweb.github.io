@@ -67,3 +67,29 @@ document.addEventListener("mouseup", () => {
     isDragging = false;
     reproductor.style.cursor = "grab";
 });
+
+// Funcionalidad para cambiar entre videos
+const videoContainer = document.querySelector(".video-container");
+const videoSlides = document.querySelectorAll(".video-slide");
+const prevButton = document.getElementById("prev-video");
+const nextButton = document.getElementById("next-video");
+let currentSlide = 0;
+
+function showSlide(index) {
+    videoSlides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
+}
+
+prevButton.addEventListener("click", () => {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : videoSlides.length - 1;
+    showSlide(currentSlide);
+});
+
+nextButton.addEventListener("click", () => {
+    currentSlide = (currentSlide < videoSlides.length - 1) ? currentSlide + 1 : 0;
+    showSlide(currentSlide);
+});
+
+// Mostrar el primer video al cargar la página
+showSlide(currentSlide);
