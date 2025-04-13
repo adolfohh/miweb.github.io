@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecnoGuías - Tutoriales de Tecnología, Optimización y Programación</title>
+    <title>TecnoGuías - Tutoriales Profesionales de Tecnología</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Fondo animado -->
+    <!-- Video de fondo con overlay -->
+    <div class="video-overlay"></div>
     <video autoplay muted loop id="video-fondo">
         <source src="fondo.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
     </video>
 
+    <!-- Header profesional -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo de TecnoGuías" class="logo-img">
+            <img src="logo.png" alt="TecnoGuías" class="logo-img">
             <h1>TecnoGuías</h1>
         </div>
         <nav>
@@ -25,153 +28,185 @@
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h2>Bienvenido a TecnoGuías</h2>
-                <p>Aprende sobre tecnología, optimización y programación con nuestros tutoriales paso a paso.</p>
-                <a href="#tutoriales" class="btn">Explorar Tutoriales</a>
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Domina la tecnología con guías expertas</h2>
+            <p>Aprende SolidWorks, optimización de sistemas y programación con tutoriales paso a paso diseñados por profesionales.</p>
+            <div class="cta-buttons">
+                <a href="#tutoriales" class="btn btn-primary">Explorar Tutoriales</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sección: Videos -->
-        <section id="videos">
-            <div class="video-container">
-                <!-- Primer Video -->
-                <div class="video-slide active">
-                    <div class="portada-container">
-                        <div class="portada-img-container">
-                            <img src="portada-video.jpg" alt="Portada del primer video" class="portada-img">
-                            <div class="play-icon">▶️</div>
-                        </div>
-                        <div class="descripcion">
-                            <h2>Mi Primer Video: Introducción a SolidWorks</h2>
-                            <p>En este video, te enseño los conceptos básicos de SolidWorks, desde croquis 2D hasta modelado 3D. ¡No te lo pierdas!</p>
-                            <a href="https://files.transtutors.com/book/qimg/1363ec07-0620-4f5f-bfaa-d1b1a73b29d8.png" download class="btn">Descargar Imagen del Video</a>
-                            <p class="nota">(Si no se descarga automáticamente, haz clic derecho y selecciona "Guardar imagen como...")</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Segundo Video -->
-                <div class="video-slide">
-                    <div class="portada-container">
-                        <div class="portada-img-container">
-                            <img src="2.png" alt="Portada del segundo video" class="portada-img">
-                            <div class="play-icon">▶️</div>
-                        </div>
-                        <div class="descripcion">
-                            <h2>Mi Segundo Video: Optimización Avanzada en SolidWorks</h2>
-                            <p>En este video, te enseño técnicas avanzadas para optimizar tus diseños en SolidWorks. ¡No te lo pierdas!</p>
-                            <a href="https://i.pinimg.com/736x/68/20/48/682048d7290a2b2e20975d9a65cb093a.jpg" download class="btn">Descargar Imagen del Video</a>
-                            <p class="nota">(Si no se descarga automáticamente, haz clic derecho y selecciona "Guardar imagen como...")</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tercer Video -->
-                <div class="video-slide">
-                    <div class="portada-container">
-                        <div class="portada-img-container">
-                            <img src="3.png" alt="Portada del tercer video" class="portada-img">
-                            <div class="play-icon">▶️</div>
-                        </div>
-                        <div class="descripcion">
-                            <h2>SolidWorks 2D: Más Croquis y Técnicas Avanzadas | Parte 3 🚀</h2>
-                            <p>Seguimos avanzando en el mundo del croquis 2D en SolidWorks. En este video aprenderás nuevas técnicas para mejorar tu diseño y optimizar tu flujo de trabajo. ¡No te lo pierdas! 🔥</p>
-                            <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwuXOnfR4BnzRWJfOaVxthRA2l0KqHwltiJu9ck13KH0DH6FD6XAcC6NxL3rEtUO44qiQpxo3W1HeUsPrYGVhePX1Qg0Vq5oxeITzFFntxYptzNYiFv30LU-1bi02xqhDGHw0v2HpAdQzq/s1600/PropBas05.png" download class="btn">Descargar Imagen del Video</a>
-                            <p class="nota">(Si no se descarga automáticamente, haz clic derecho y selecciona "Guardar imagen como...")</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controles de navegación entre videos -->
-            <div class="video-controls">
-                <button id="prev-video">⏮️ Anterior</button>
-                <button id="next-video">Siguiente ⏭️</button>
-            </div>
-        </section>
-
-        <!-- Sección: Tutoriales -->
-        <section id="tutoriales">
-            <h2>Tutoriales Recientes</h2>
+    <!-- Sección de Tutoriales Destacados -->
+    <section id="tutoriales" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Tutoriales <span>Destacados</span></h2>
             <div class="tutoriales-grid">
-                <div class="tutorial destacado">
-                    <h3>Introducción a SolidWorks</h3>
-                    <p>Aprende los conceptos básicos de SolidWorks desde cero.</p>
-                    <a href="https://www.youtube.com/watch?v=pcdnof5jKiY&list=PLCNCdSd3uC1nABiPpQzsJ_K_Emd9XAD52&pp=gAQB" target="_blank" class="btn">Ver Video</a>
-                </div>
-                <div class="tutorial">
-                    <h3>Optimización de PC</h3>
-                    <p>Consejos para mejorar el rendimiento de tu computadora.</p>
-                </div>
-                <div class="tutorial">
-                    <h3>Programación en JavaScript</h3>
-                    <p>Domina los fundamentos de JavaScript para desarrollo web.</p>
-                </div>
-            </div>
-        </section>
+                <article class="tutorial-card destacado">
+                    <div class="card-header">
+                        <img src="portada-video.jpg" alt="SolidWorks">
+                        <div class="badge">Popular</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Introducción a SolidWorks</h3>
+                        <p>Aprende los fundamentos de modelado 3D desde cero con este curso completo.</p>
+                        <div class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=pcdnof5jKiY" target="_blank" class="btn btn-small">
+                                <i class="fas fa-play"></i> Ver Tutorial
+                            </a>
+                            <span class="duration"><i class="far fa-clock"></i> 45 min</span>
+                        </div>
+                    </div>
+                </article>
 
-        <!-- Sección: Sobre Mí -->
-        <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
+                <article class="tutorial-card">
+                    <div class="card-header">
+                        <img src="Cian y Azul Grunge Música YouTube Miniatura (1).png" alt="Optimización">
+                    </div>
+                    <div class="card-body">
+                        <h3>Optimización de PC</h3>
+                        <p>Técnicas avanzadas para mejorar el rendimiento de tu equipo.</p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-play"></i> Ver Tutorial
+                            </a>
+                            <span class="duration"><i class="far fa-clock"></i> 32 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tutorial-card">
+                    <div class="card-header">
+                        <img src="javascript-thumb.jpg" alt="JavaScript">
+                    </div>
+                    <div class="card-body">
+                        <h3>JavaScript Moderno</h3>
+                        <p>Fundamentos de programación para desarrollo web profesional.</p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-play"></i> Ver Tutorial
+                            </a>
+                            <span class="duration"><i class="far fa-clock"></i> 58 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section-light">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Mí</span></h2>
             <div class="sobre-mi-content">
-                <img src="adolfo.jpg" alt="Adolfo" class="sobre-mi-img">
-                <div class="sobre-mi-texto">
-                    <p>¡Hola! Soy <strong>Adolfo</strong>, ingeniero en Tecnología de Manufactura con más de 2 años de experiencia en diseño industrial y desarrollo de productos. Mi pasión es enseñar y compartir conocimientos sobre tecnología, optimización y programación.</p>
-                    <p>En TecnoGuías, encontrarás tutoriales prácticos y fáciles de seguir para que puedas dominar herramientas como SolidWorks, optimizar tus dispositivos y aprender a programar desde cero.</p>
-                    <p>¡Únete a esta comunidad y comienza a crear proyectos increíbles!</p>
+                <div class="profile-img-container">
+                    <img src="adolfo.jpg" alt="Adolfo" class="profile-img">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="bio">
+                    <h3>Adolfo Hernandez</h3>
+                    <p class="subtitle">Ingeniero en Tecnología de Manufactura</p>
+                    <p>Con más de 2 años de experiencia en diseño industrial y desarrollo de productos, me apasiona compartir conocimiento técnico de manera accesible.</p>
+                    <p>En TecnoGuías combino mi experiencia profesional con metodologías pedagógicas efectivas para ofrecerte el mejor contenido educativo tecnológico.</p>
+                    <div class="skills">
+                        <span class="skill-tag">SolidWorks</span>
+                        <span class="skill-tag">Optimización</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">CAD/CAM</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sección: Contacto -->
-        <section id="contacto">
-            <h2>Contacto</h2>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
             <div class="contacto-container">
                 <form action="https://formspree.io/f/xvgzlkdw" method="POST" class="contacto-form">
-                    <input type="text" name="nombre" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-                    <button type="submit" class="btn">Enviar Mensaje</button>
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
                 </form>
                 <div class="contacto-info">
-                    <p>¿Tienes alguna pregunta o sugerencia? ¡No dudes en contactarme!</p>
-                    <p>Correo: <a href="jbbfudshfjkdfn@gmail.com">jbbfudshfjkdfn@gmail.com</a></p>
-                    <div class="redes-sociales">
-                        <a href="[Enlace a YouTube]" target="_blank">YouTube</a>
-                        <a href="[Enlace a Instagram]" target="_blank">Instagram</a>
-                        <a href="[Enlace a Twitter]" target="_blank">Twitter</a>
+                    <h3>Información de contacto</h3>
+                    <p><i class="fas fa-envelope"></i> contacto@tecnoguias.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+                    
+                    <div class="business-hours">
+                        <h4>Horario de atención:</h4>
+                        <p>Lunes a Viernes: 9am - 6pm</p>
+                        <p>Sábados: 10am - 2pm</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer profesional -->
     <footer>
-        <p>&copy; 2024 TecnoGuías. Todos los derechos reservados.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>TecnoGuías</h3>
+                    <p>Educación tecnológica de calidad para profesionales y entusiastas.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#tutoriales">Tutoriales</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos de servicio</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TecnoGuías. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
-
-    <!-- Reproductor de música flotante -->
-    <div id="reproductor">
-        <div id="nave-alienigena">
-            <img src="nave.png" alt="Nave alienígena">
-        </div>
-        <div id="controles">
-            <button id="anterior">⏮️</button>
-            <button id="play-pause">▶️</button>
-            <button id="siguiente">⏭️</button>
-        </div>
-        <audio id="audio">
-            <source src="musica.mp3" type="audio/mpeg">
-            <source src="musica2.mp3" type="audio/mpeg">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-    </div>
 
     <script src="script.js"></script>
 </body>
